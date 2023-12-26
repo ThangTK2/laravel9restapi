@@ -1,0 +1,9 @@
+- khai báo đường dẫn trong routes/api
+- Tạo php artisan make:migration create_students_table
+(
+    Khi bạn phát triển một ứng dụng Laravel và muốn thay đổi cấu trúc của cơ sở dữ liệu (thêm bảng, cột, chỉnh sửa cấu trúc, v.v.), bạn sử dụng migration để thực hiện các thay đổi đó mà không cần phải can thiệp trực tiếp vào cơ sở dữ liệu. Migration giúp đảm bảo rằng mọi thành viên trong nhóm phát triển hoặc trên môi trường sản xuất có thể áp dụng các thay đổi cơ sở dữ liệu một cách dễ dàng.
+)
+- connect database
+- php artisan migrate: sử dụng để chạy các migration, cập nhật lại cấu trúc cơ sở dữ liệu của ứng dụng của bạn dựa trên các file migration bạn đã định nghĩa.
+- php artisan make:model Students:  sử dụng để tạo một file model mới có tên là "Students".
+- php artisan make:controller Api/StudentsController
